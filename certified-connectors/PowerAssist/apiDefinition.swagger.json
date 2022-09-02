@@ -503,7 +503,7 @@
             "description": "500 Internal Server Error - if this issue persists, reach out to powerassistsupport@elevate-digital.com."
           }
         },
-        "summary": "Check whether Every item in an Array meet a condition",
+        "summary": "Check whether Every item in an Array meets a condition",
         "description": "This action returns True if all of the items in an array match a specified condition; otherwise, it returns False.",
         "operationId": "ArrayEvery",
         "parameters": [
@@ -601,7 +601,7 @@
             "description": "500 Internal Server Error - if this issue persists, reach out to powerassistsupport@elevate-digital.com."
           }
         },
-        "summary": "Remove First",
+        "summary": "Remove First from Array",
         "description": "Accepts an Array of any data type. Returns an Array with the first Item that matches the specified condition removed. If no Item matches the condition, the entire Array is returned.",
         "operationId": "ArrayRemoveFirst",
         "parameters": [
@@ -1647,7 +1647,7 @@
           }
         },
         "description": "Split string by delimiter (String or RegEx pattern). The action splits by whitespace by default. If using RegEx, include the leading and trailing '/' in your pattern and optionally append flags.",
-        "summary": "Split String into Array of Words",
+        "summary": "Split String into Array by Delimiter or RegEx",
         "operationId": "StringWords",
         "x-ms-visibility": "important",
         "parameters": [
@@ -1665,8 +1665,8 @@
                 },
                 "delimiter": {
                   "type": "string",
-                  "description": "If left blank, whitespace is used as the default delimiter.",
-                  "title": "Delimiter"
+                  "description": "If left blank, whitespace is used as the default delimiter. RegEx example: /\\d+/g",
+                  "title": "Delimiter or RegEx"
                 }
               },
               "required": [
@@ -1709,7 +1709,7 @@
             "description": "500 Internal Server Error - if this issue persists, reach out to powerassistsupport@elevate-digital.com."
           }
         },
-        "summary": "Count Words in String by Specified Delimiter",
+        "summary": "Count Words in String by Specified Delimiter or RegEx",
         "description": "Count the words in a String by a delimiter (String or RegEx pattern). The delimiter is whitespace by default. If using RegEx, include the leading and trailing '/' in your pattern and optionally append flags.",
         "operationId": "StringWordCount",
         "parameters": [
@@ -1727,8 +1727,8 @@
                 },
                 "delimiter": {
                   "type": "string",
-                  "description": "If left blank, whitespace is used as the default delimiter.",
-                  "title": "Delimiter"
+                  "description": "If left blank, whitespace is used as the default delimiter. RegEx example: /\\d+/g",
+                  "title": "Delimiter or RegEx"
                 }
               },
               "required": [

@@ -1298,7 +1298,7 @@
                 },
                 "pattern": {
                   "type": "string",
-                  "description": "pattern",
+                  "description": "Example: /\\d+/gi",
                   "title": "RegEx Pattern"
                 },
                 "replaceValue": {
@@ -2563,7 +2563,7 @@
                 },
                 "pattern": {
                   "type": "string",
-                  "description": "pattern",
+                  "description": "Example: /\\d+/gi",
                   "title": "RegEx Pattern"
                 }
               },
